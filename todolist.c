@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "task.h"
+
 #define MAX_TASKS 100
 #define BUFFER_SIZE 100
 
@@ -26,6 +28,8 @@ void add_task() {
         } else {
             printf("Memory allocation failed!\n");
         }
+    } else {
+        printf("Failed to get input!\n");
     }
 }
 
